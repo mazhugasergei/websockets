@@ -15,7 +15,7 @@ export default () => {
 	}
 
 	useEffect(() => {
-		const newSocket = new WebSocket("ws://YOU_IP_ADDRESS:8080")
+		const newSocket = new WebSocket("ws://192.168.151.186:8080")
 		setSocket(newSocket)
 	}, [])
 
