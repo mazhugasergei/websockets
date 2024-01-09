@@ -2,8 +2,8 @@ const WebSocket = require("ws")
 
 const server = new WebSocket.Server({ port: 8080 })
 
-let messages = [{ sender: "Admin", message: "hello" }]
-let usernames = ["Duck", "Rabbit", "Bee"]
+let messages = []
+let usernames = ["Duck", "Rabbit", "Bee", "Bear", "Deer"]
 
 server.on("connection", (socket) => {
 	const usernameIndex = Math.floor(Math.random() * usernames.length)
